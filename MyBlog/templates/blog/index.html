@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} {% endblock %}
+
+{% block content %}
+
+	<div class="innerContent">
+	{% for post in posts %}
+		<div class="post">
+			<div class="postWrapper">
+				<div class="postTitle">
+					<h2>
+						<a href="{{post.get_absolute_url}}" class="blogLink">{{post.title}}</a>
+					</h2>
+					<span class="postSubTitle">Posted {{post.created}}</span>
+				</div>
+
+				<p>{{post.description}}</p>
+				<p>{{post.postType}}</p>
+			</div>
+		</div>
+		<div class="postSpacer height1"></div>
+	{% endfor %}
+	</div>
+	<div class="outterContent">
+		<p class="shortBio"><span><strong>Greetings,</span>  I'm Karl. </strong> I'm a software consultant in the Boston Area.  Sometimes I work. Sometimes I present in the community. Sometimes I tell jokes, they're pretty bad. And sometimes I write.  This blog is for the technical community as well as for me.  I welcome any and all comments driving good conversation.  <a href="/about">Read more...</a></p>
+
+		<div class="postSpacer height1 topBottomMargin10"></div>
+
+		<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fschwirz&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=417265248364917" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px;" allowTransparency="true"></iframe>
+	</div>	
+
+{% endblock %}

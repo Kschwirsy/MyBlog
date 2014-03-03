@@ -1,0 +1,31 @@
+.top10 { top:10px;}
+.top20 { top:20px;}
+.top30 { top:30px;}
+.top40 { top:40px;}
+.top50 { top:50px;}
+.top60 { top:60px;}
+.top70 { top:70px;}
+.top80 { top:80px;}
+.top90 { top:90px;}
+.top100 { top:100px;}
+.top900 { top:900px;}
+
+.center { margin: auto auto !important;}
+
+.floatLeft { float: left;}
+.floatRight { float: right;}
+
+.height1 { height: 1px; }
+.height10 { height: 10px; }
+.height20 { height: 20px; }
+.height25 { height: 25px; }
+.height30 { height: 30px; }
+.height40 { height: 40px; }
+.height50 { height: 50px; }
+.height60 { height: 60px; }
+.height70 { height: 70px; }
+.height80 { height: 80px; }
+.height90 { height: 90px; }
+.height100 { height: 100px; }
+
+.topBottomMargin10 { margin: 10px 0px ;}

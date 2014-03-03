@@ -1,0 +1,76 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>
+                {% block title %}{% endblock %}
+            </title>
+            <link  type="text/css" rel="stylesheet" href="{% static 'css/style.css'%}">
+            <link  type="text/css" rel="stylesheet" href="{% static 'css/spacing.css'%}">
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+            <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+            <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+            <script type="text/javascript" src="{% static 'js/blogScript.js' %}"></script>
+        </head>
+        <body>
+            <section id="head">
+                <div class="wrapper">
+                    <div class="header">
+                        <img src="../../../../../static/images/background.png" />
+                        <a class="title" />
+                        <div>
+                            <div class="subtitle"></div>
+                            <div class="disclaimer"></div>
+                        </div>
+                        <div class="heartbeat"></div>
+                    </div>
+                    <div class="headerSpacer"></div>
+                </div>
+            </section>
+
+            <section id="body">
+
+                <div class="nav">
+                    <ul>
+                        <li {% if request.path == '/' %} class="active"{% endif %}>
+                            <div style="padding:9px;">
+                                <a class="navLink" href="/">home</a>
+                            </div>
+                        </li>
+                        <li {% if request.path == '/tech/' %} class="active"{% endif %}>
+                            <div style="padding:9px;">
+                                <a class="navLink" href="/tech/">tech blog</a>
+                            </div>
+                        </li>
+                        <li {% if request.path == '/personal/' %} class="active"{% endif %}>
+                            <div style="padding:9px;">
+                                <a class="navLink" href="/personal/">personal blog</a>
+                            </div>
+                        </li>
+                        <li {% if request.path == '/about/' %} class="active"{% endif %}>
+                            <div style="padding:9px;">
+                                <a class="navLink" href="/about/">About</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+
+                <!-- <div class="rightColumn">
+                </div> -->
+            </section>
+
+            <div class="clearFooter"></div>
+
+            <section class="center copyright spacerWithPin height40">
+                <span>There is no copyright, these are my thoughts and methods that I have derived from researching online</span><br/>
+                <span>Use what you wish</span>
+            </section>
+        </body>
+    </html>

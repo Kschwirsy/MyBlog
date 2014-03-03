@@ -1,0 +1,315 @@
+/*Setup Styles*/
+
+@font-face{
+    font-family: siteFont;
+    src: url("ChangaOne/ChangaOne-Regular.ttf");
+}
+
+html{
+    background-color: #EEEEEE;
+    background-repeat: repeat;
+}
+
+body{
+    background-color: #fbfbfb;
+    color: #2e2e2e;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 28px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: scroll
+}
+
+a {
+    color: #5C0204;
+}
+
+a:hover {
+    color: #91040B;
+}
+
+#head {
+    display:block;
+}
+
+#body {
+    background-color: #EEEEEE;
+    display: block;
+    min-height: 300px;
+    position: absolute;
+    top: 270px;
+    width: 100%;
+}
+
+div.header{
+    background-color: #EEEEEE;
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 270px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+div.headerExtender{
+    background-color: #EEEEEE;
+    background-position: initial;
+    background-repeat: repeat;
+    position: absolute;
+    height: 100px;
+    top:0px;
+    width: 100%; 
+}
+
+div.header img {
+    width:450px;
+    margin: 20px 0 0 315px;
+}
+ 
+div.header a.title{
+    background-image: url("../Images/SiteTitle.png");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100px;
+    left: 815px;
+    position: absolute;
+    top: 95px;
+    width: 500px;
+}
+div.header div.subtitle{ 
+    background-image: url("../Images/SubTitle.png");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100px;
+    left: 10px;
+    position: absolute;
+    top: 3px;
+    width: 300px;
+}
+
+div.header div.disclaimer{ 
+    background-image: url("../Images/Disclaimer.png");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 100px;
+    left: 14px;
+    position: absolute;
+    top: 10px;
+    width: 130px;
+}
+
+div.header div.heartbeat{
+    background-image: url("../Images/heartbeat.png");
+    background-position: initial;
+    background-repeat: no-repeat;
+    height: 40px;
+    margin: 105px 0 0 -50px;
+    width: 500px;
+}
+
+.wrapper{
+}
+
+.spacer{
+    background-color: #404040;
+    position: absolute;
+    width: 100%;    
+}
+
+.headerSpacer{
+    height: 10px;
+    left: 305px;
+    position: absolute;
+    top: 290px;
+    width: 970px;
+}
+
+.postSpacer{
+    background-color: #404040;
+    width: 100%;       
+}
+
+.spacerWithPin{
+    background-color: #404040;
+    background-image: url("../Images/background2.jpeg");
+    background-repeat: repeat;
+    position: absolute;
+    width: 100%;    
+}
+
+/*Navigation Styles*/
+
+div.nav {
+    border-bottom-right-radius: 10px;
+    display: block;
+    font-family: siteFont;
+    font-size: 20px;
+    left: 105px;
+    position: absolute;
+    width: 215px;
+}
+
+div.nav ul {
+    display: inline-block;
+    float: left;
+    height:auto;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+div.nav ul a:link{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+div.nav ul a:link:hover{
+    
+    text-decoration: none;
+}
+
+div.nav ul li{
+    background-color: #404040;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: block;
+    height: 45px;
+    margin-bottom: 30px !important;
+    margin-left: 10%;
+    margin-right: auto !important;
+    margin-top: 30px !important;
+    text-transform: uppercase;
+    width: 90%;
+}
+
+div.nav ul li.active{
+    background-color: #91040B;
+}
+
+div.nav ul li:hover{
+    background-color: #5C0204;
+    color: #E2EDD0;
+}
+
+/*Content Blocks Styles*/
+
+div.leftColumn {    
+    background-color: #FBFBFB;
+    border: 1px solid #404040;
+    float: left;
+    height: 702px;
+    margin: 0 auto 10px;
+    width: 17.2%;
+}
+
+div.rightColumn {    
+    background-color: #FBFBFB;
+    border: 1px solid #404040;
+    float: left;
+    height: 702px;
+    margin: 0 auto 10px;
+    width: 17.2%;
+}
+
+div.content{
+    background-color: #FFFFFF;
+    border: 1px solid #FBFBFB;
+    margin: 0px auto;
+    min-height: 700px;
+    width: 60%;
+}       
+
+div.innerContent{
+    float: left;
+    padding: 2% 0 2% 2%;
+    width: 75%;
+}
+
+div.outterContent{
+    float: right;
+    height: 100px;
+    padding: 0 0 0 2%;
+    width: 21%;
+}
+
+div.outterContent p.shortBio{
+    line-height:20px;
+}
+
+div.outterContent p.shortBio span{
+    margin-left:15px;
+}
+
+div.sectionTitle{
+    background-image: url("../Images/contentHeader.png");
+    border: 1px solid #404040;
+    border-bottom-right-radius: 34px;
+    color: #FBFBFB;
+    padding: 1%;
+    text-align: center;
+    width: 20%;
+}
+
+div.sectionTitle h1{
+    padding: 15px;    
+    text-transform: uppercase;
+}
+
+.copyright{
+    color: #FFFFFF;
+    line-height: 1.4;
+    position: absolute;
+    text-align: center;
+    top: 930px;
+    width: 100%;
+}
+
+div.clearFooter{
+    height:930px;
+    clear: both;
+}
+
+/*Post Styles*/
+
+div.post{
+    display: block;
+}
+
+div.postWrapper{
+    padding: 0px 10px;
+}
+
+div.post:hover{
+    background-color: #E2E2E2;
+
+}
+
+div.postTitle{
+    padding-top: 10px;
+    line-height: 1.1;
+}
+
+div.postTitle h2{
+    margin:0 0;
+    padding: 0 0;
+}
+
+div.postTitle .postSubTitle{
+    font-size: 10px;
+    float: right;
+    color:#606060;
+}
+
+/*Link Styles*/
+
+a.blogLink:link{
+    color: #002C27;
+    text-decoration: none;    
+}
+a.blogLink:link:hover{
+    color: #91040B;
+}

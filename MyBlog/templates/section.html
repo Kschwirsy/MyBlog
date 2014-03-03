@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% extends 'index.html' %}
+
+
+{% block section %}
+	<div class="sectionTitle">
+		<h1>Recent Entries</h1>
+	</div>
+	<div class="innerContent">
+	{% for post in posts %}
+		<div class="post">
+			<h2>
+				<a href="{{post.get_absolute_url}}" class="blogLink">{{post.title}}</a>
+			</h2>
+			<p>{{post.description}}</p>
+		</div>
+	{% endfor %}
+	</div>		
+{% endblock %}
